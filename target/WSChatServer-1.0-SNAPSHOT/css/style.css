@@ -1,0 +1,436 @@
+/* Resetting default styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+
+}
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ecf0f1;
+    /*color: #050505;*/
+    /*border: 0.5px solid #050505;*/
+    /*border-radius: 2px;*/
+}
+
+/* Main layout styles */
+.header {
+    background-color: #0d0d54;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.sidebar {
+    position: relative;
+    top:0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    background: #fff;
+    width: 85px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+    transition: ease-in-out;
+    border-radius: 10px;
+}
+
+.sidebar {
+    width: 280px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+.logo{
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 10px;
+    transition: all 0.5s ease;
+}
+img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+a{
+    position: relative;
+    color: rgb(83, 84, 85);
+    font-size: 14px;
+    display: table;
+    width: 280px;
+    padding: 10px;
+    border-radius: 10px;
+}
+nav .fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 2px;
+    font-size: 20px;
+    text-align: center;
+}
+nav.item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+a:hover{
+    background: rgb(216, 233, 252);
+}
+
+.content {
+    position: absolute;
+    left: 270px;
+    top: 110px;
+
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 30%;
+}
+.about-page{
+    position: absolute;
+    left: 270px;
+    background: rgba(4, 111, 193, 0.71);
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 1000px;
+    font-family: "Poppins",sans-serif;
+}
+.about-page h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-page p{
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.about-page a{
+    display: block;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    background: #0d0d54;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.about-page a:hover{
+    background: #0d0d54;
+}
+.about-page ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.about-page ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.about-page ul li span{
+    font-weight: bold;
+}
+.about-page ol{
+    list-style: none;
+    margin-top: 20px;
+}
+/* Responsive layout */
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+    }
+
+    .sidebar {
+        width: 250px;
+        flex: 0 0 250px;
+    }
+
+    .main-content {
+        flex: 1;
+    }
+}
+/* game */
+
+player-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: "Poppins",sans-serif;
+}
+game-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+button.rock-button{
+    width: 100px;
+    height: 40px;
+    border-radius: 2px;
+    margin: 10px;
+    display: inline-block;
+    border: 0.5px solid #050505;
+    background: rgb(255, 255, 255);
+}
+button.paper-button{
+    width: 100px;
+    height: 40px;
+    border-radius: 2px;
+    margin: 10px;
+    display: inline-block;
+    border: 0.5px solid #050505;
+    background: rgb(255, 255, 255);
+}
+button.scissors-button{
+    width: 100px;
+    height: 40px;
+    border-radius: 2px;
+    margin: 10px;
+    display: inline-block;
+    border: 0.5px solid #050505;
+    background: rgb(255, 255, 255);
+}
+button.rock-button:hover {
+    background-color: rgba(13, 13, 84, 0.84); /* Change the background color when hovered */
+    transition: background-color 0.5s;
+    color: #ecf0f1;
+
+}
+button.paper-button:hover {
+    background-color: rgba(13, 13, 84, 0.84); /* Change the background color when hovered */
+    transition: background-color 0.5s;
+    color: #ecf0f1;
+
+}
+button.scissors-button:hover {
+    background-color: rgba(13, 13, 84, 0.84); /* Change the background color when hovered */
+    transition: background-color 0.5s;
+    color: #ecf0f1;
+
+}
+button.btn3 {
+    width: 200px;  /* or any other value */
+    height: 40px; /* or any other value */
+    display: block;
+    background: rgb(255, 255, 255);
+    border:0.5px solid #050505;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 14px;
+
+}
+button.btn3:hover {
+    background-color: rgba(13, 13, 84, 0.84); /* Change the background color when hovered */
+    transition: background-color 0.5s;
+    color: #ecf0f1;
+
+}
+button.btn3 i.fas.fa-rotate{
+    /*align-items: center;*/
+    font-size: 12px;
+    margin-right: 10px;
+    display: inline;
+}
+/*title*/
+h1.t1{
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 350px;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #050505;
+}
+h1.t1 {
+    width: 450px;
+    height: 70px;
+    background-color: #f50707;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border-radius: 50px;
+    position: relative;
+
+}
+
+@keyframes example{
+    /*from {background-color: rgba(106, 129, 245, 0.9);}*/
+    /*to {background-color: rgba(231, 220, 16, 0.92);}*/
+
+    0%   {background-color: rgba(229, 80, 80, 0.89); left:0px; top:0px;}
+    25%  {background-color: rgba(215, 215, 70, 0.91); left:200px; top:0px;}
+    50%  {background-color: rgba(60, 60, 217, 0.89); left:0px; top:0px;}
+    75%  {background-color: rgba(108, 222, 108, 0.87); left:200px; top:0px;}
+    100% {background-color: rgba(178, 47, 238, 0.86); left:0px; top:0px;}
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(170, 208, 239, 0.71);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: #ffffff;
+}
+
+/* Style scoreboard */
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.scoreboard > div {
+    font-size: 2rem;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    border: 2px solid rgba(13, 13, 84, 0.84);
+    border-radius: 10px;
+    color: rgba(13, 13, 84, 0.84);
+}
+
+/* Style choices */
+.choices {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.choice {
+    border: 2px solid rgba(13, 13, 84, 0.84);
+    border-radius: 10px;
+    margin: 0 2rem;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+    color: #e80909;
+}
+
+.choice:active {
+    transform: scale(0.9);
+    color: #e80909;
+}
+
+.choice i {
+    color: rgba(13, 13, 84, 0.84);
+    font-size: 50px;
+}
+
+/* Style result */
+.result {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: rgba(13, 13, 84, 0.84);
+}
+
+#players-choice {
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(13, 13, 84, 0.84);
+}
+
+/* Style timer */
+.timer {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: rgba(13, 13, 84, 0.84);
+}
+
+/* Style play again button */
+.play-again {
+    display: block;
+    margin: 3rem auto 1rem auto;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(13, 13, 84, 0.84);
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.play-again:hover {
+    background-color: rgba(36, 36, 85, 0.84);
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: block;
+    z-index: 100;
+    transition: all 250ms linear;
+}
+
+.logo img {
+    height: 30px;
+    width: auto;
+    display: block;
+}
+
+.play-again:active {
+    transform: scale(0.9);
+}
+.player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: "Poppins",sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0d0d54;
+}
+
+/* Add responsive design */
+@media only screen and (max-width: 600px) {
+    .choices {
+        flex-wrap: wrap;
+    }
+
+    .choice {
+        margin: 2rem 1rem;
+    }
+
+    .timer {
+        margin-top: 1rem;
+    }
+}

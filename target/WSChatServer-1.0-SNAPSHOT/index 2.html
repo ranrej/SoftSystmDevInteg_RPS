@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chat Server</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+
+
+<!-- Header section of the dashboard -->
+<div class="header">
+  <h1>Rock Paper Scissors Game</h1>
+</div>
+
+
+<!-- Main container that holds both the sidebar and the content area -->
+<div class="container">
+
+  <!-- Sidebar navigation -->
+  <div class="sidebar">
+    <nav>
+      <img src="img/icon.png" alt="">
+      <br>
+      <a href="about.html">About</a>
+      <br>
+      <a href="index.html">Rock Paper Scissors Game</a>
+      <br>
+      <br>
+    </nav>
+  </div>
+
+
+  <!-- Main content area where chat will be displayed -->
+  <div class="main-content">
+
+    <h1 class="t1">Rock Paper Scissors Game !</h1>
+
+    <div class="scoreboard">
+      <div class="player1-score">Player 1: 0</div>
+      <div class="player2-score">Player 2: 0</div>
+    </div>
+
+    <div class="choices">
+      <div class="choice" id="rock">
+        <i class="fas fa-hand-rock"></i>
+      </div>
+      <div class="choice" id="paper">
+        <i class="fas fa-hand-paper"></i>
+      </div>
+      <div class="choice" id="scissors">
+        <i class="fas fa-hand-scissors"></i>
+      </div>
+    </div>
+    <div class="result" id="result">
+      <p>Choose your weapon!</p>
+    </div>
+    <div id="players-choice"></div>
+    <button class="play-again" id="play-again">Play Again</button>
+
+  </div>
+</div>
+
+<!--  <script>-->
+<!--    const ws = new WebSocket('ws://localhost:8080/WSChatServer-1.0-SNAPSHOT/');-->
+
+
+<!--    ws.addEventListener("open", e => {-->
+<!--      ws.send(JSON.stringify({-->
+<!--        x: 32,-->
+<!--        y: 64-->
+<!--      }));-->
+<!--    });-->
+<!--  </script>-->
+
+</body>
+
+</html>
+
+
