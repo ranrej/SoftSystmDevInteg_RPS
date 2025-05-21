@@ -1,5 +1,7 @@
 # Rock-Paper-Scissors Game with WebSockets
 
+**Project for CSCI 2020U - Software Systems Development & Integration**
+
 ## Project Information
 
 The Rock-Paper-Scissors Game is a full-stack web application that allows two users to play the classic game of Rock-Paper-Scissors in real-time using WebSockets. Players can connect to the game, choose their move, and see the result instantly. The application is built using HTML, CSS, JavaScript, and WebSocket.
